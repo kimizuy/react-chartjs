@@ -1,8 +1,19 @@
 {
   "name": "@kimizuy/react-chartjs",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "author": "kimizuy <kimizuyamasaki@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "chart.js": "^3.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.9.2",
+    "typescript": "^4.4.3"
+  }
 }
