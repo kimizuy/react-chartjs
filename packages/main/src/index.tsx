@@ -20,7 +20,7 @@ const Base = (props: BaseProps): JSX.Element => {
   return <canvas ref={canvasRef} />
 }
 
-type ChartProps = Omit<BaseProps, 'type'>
+type ChartProps = Omit<ChartConfiguration, 'type'>
 
 export const Bar = (props: ChartProps): JSX.Element => {
   return <Base type="bar" data={props.data} />
