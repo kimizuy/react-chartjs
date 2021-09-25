@@ -1,5 +1,5 @@
 {
-  "name": "@kimizuy/react-chartjs",
+  "name": "react-chartjs",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/kimizuy/react-chartjs.git",
@@ -10,8 +10,7 @@
     "packages/*"
   ],
   "scripts": {
-    "example": "yarn workspace example",
-    "lib": "yarn workspace react-chartjs",
+    "main": "yarn workspace @kimizuy/react-chartjs",
     "typecheck": "tsc --noEmit",
     "lint:fix": "eslint --fix '**/src/**/*.{ts,tsx,js,jsx,json,md}'",
     "lint:ci": "eslint '**/src/**/*.{ts,tsx,js,jsx,json,md}'",
