@@ -2,7 +2,7 @@ name: publish
 on:
   push:
     tags:
-      - "v*"
+      - 'v*'
 jobs:
   dev:
     name: check version, add tag and release
@@ -14,19 +14,19 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16.x
-          registry-url: "https://registry.npmjs.org"
+          registry-url: 'https://registry.npmjs.org'
       - name: install
         run: yarn install
       - name: typecheck
-        run: yarn run typecheck
+        run: yarn typecheck
       - name: lint
-        run: yarn run lint:ci
+        run: yarn lint:ci
       - name: format
-        run: yarn run format:ci
+        run: yarn format:ci
       - name: build
-        run: yarn run lib run build:prd
+        run: yarn main build
       - name: can i publish
-        run: yarn run can-npm-publish
+        run: yarn can-npm-publish
         working-directory: ./packages/web-component
       - name: release
         run: npm publish
