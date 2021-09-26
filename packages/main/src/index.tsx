@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import { Chart, ChartConfiguration, registerables } from 'chart.js'
+import useDeepCompareEffect from 'use-deep-compare-effect'
 
 type BaseProps = ChartConfiguration
 
@@ -9,13 +10,13 @@ const Base = (props: BaseProps): JSX.Element => {
   const config = { ...props }
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
-  useEffect(() => {
+  useDeepCompareEffect(() => {
     const element = canvasRef.current
     if (!element) return
     Chart.register(...registerables)
     const chart = new Chart(element, config)
     return () => chart.destroy()
-  }, [])
+  }, [config])
 
   return <canvas ref={canvasRef} />
 }

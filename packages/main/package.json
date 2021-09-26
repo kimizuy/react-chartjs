@@ -23,7 +23,8 @@
   "dependencies": {
     "chart.js": "^3.5.1",
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "use-deep-compare-effect": "^1.8.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",
