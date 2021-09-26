@@ -10,11 +10,12 @@
   ],
   "scripts": {
     "main": "yarn workspace @kimizuy/react-chartjs",
+    "example": "yarn workspace example",
     "typecheck": "tsc --noEmit",
-    "lint:fix": "eslint --fix '**/src/**/*.{ts,tsx,js,jsx,json,md}'",
-    "lint:ci": "eslint '**/src/**/*.{ts,tsx,js,jsx,json,md}'",
-    "format:fix": "prettier --write '**/src/**/*.{ts,tsx,js,jsx,json,md}'",
-    "format:ci": "prettier --check '**/src/**/*.{ts,tsx,js,jsx,json,md}'"
+    "lint:fix": "eslint --fix '**/*.{ts,tsx,js,jsx,json,md}'",
+    "lint:ci": "eslint '**/*.{ts,tsx,js,jsx,json,md}'",
+    "format:fix": "prettier --write '**/*.{ts,tsx,js,jsx,json,md}'",
+    "format:ci": "prettier --check '**/*.{ts,tsx,js,jsx,json,md}'"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.31.1",
