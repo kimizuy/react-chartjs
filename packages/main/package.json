@@ -18,7 +18,7 @@
   },
   "scripts": {
     "build": "vite build && yarn build:type",
-    "build:type": "tsc --declaration --jsx react --esModuleInterop --skipLibCheck --outDir dist --emitDeclarationOnly src/index.tsx"
+    "build:type": "tsc --declaration --jsx react-jsx --esModuleInterop --skipLibCheck --outDir dist --emitDeclarationOnly src/index.tsx"
   },
   "dependencies": {
     "chart.js": "^3.5.1",
