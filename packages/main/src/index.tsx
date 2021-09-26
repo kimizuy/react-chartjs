@@ -23,7 +23,7 @@ const Base = (props: BaseProps): JSX.Element => {
 type ChartProps = Omit<ChartConfiguration, 'type'>
 
 export const Bar = (props: ChartProps): JSX.Element => {
-  return <Base type="bar" data={props.data} />
+  return <Base type="bar" {...props} />
 }
 
 export const Bubble = (props: ChartProps): JSX.Element => {
