@@ -5,7 +5,7 @@ import useDeepCompareEffect from 'use-deep-compare-effect'
 type BaseProps = ChartConfiguration
 
 const Base = (props: BaseProps): JSX.Element => {
-  // Make a shallow copy.
+  // Make a copy.
   // ref: https://github.com/reactchartjs/react-chartjs-2/issues/524
   const config = { ...props }
   const canvasRef = useRef<HTMLCanvasElement>(null)
