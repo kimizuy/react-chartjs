@@ -5,18 +5,18 @@ import useDeepCompareEffect from 'use-deep-compare-effect'
 type BaseProps = ChartConfiguration
 
 const Base = (props: BaseProps): JSX.Element => {
-  // Make a copy.
-  // ref: https://github.com/reactchartjs/react-chartjs-2/issues/524
-  const config = { ...props }
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useDeepCompareEffect(() => {
+    // Make a copy.
+    // ref: https://github.com/reactchartjs/react-chartjs-2/issues/524
+    const config = { ...props }
     const element = canvasRef.current
     if (!element) return
     Chart.register(...registerables)
     const chart = new Chart(element, config)
     return () => chart.destroy()
-  }, [config])
+  }, [props])
 
   return <canvas ref={canvasRef} />
 }
