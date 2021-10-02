@@ -2,6 +2,13 @@
   "name": "@kimizuy/react-chartjs",
   "version": "0.1.0",
   "repository": "https://github.com/kimizuy/react-chartjs.git",
+  "keywords": [
+    "chartjs",
+    "chart.js",
+    "react-chartjs",
+    "react chart.js",
+    "react-chartjs-2"
+  ],
   "author": "kimizuy <kimizuyamasaki@gmail.com>",
   "license": "MIT",
   "files": [
