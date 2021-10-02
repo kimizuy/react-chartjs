@@ -12,8 +12,8 @@
     "main": "yarn workspace @kimizuy/react-chartjs",
     "example": "yarn workspace example",
     "typecheck": "tsc --noEmit",
-    "lint:fix": "eslint --fix '**/*.{ts,tsx,js,jsx,json,md}'",
-    "lint:ci": "eslint '**/*.{ts,tsx,js,jsx,json,md}'",
+    "lint:fix": "eslint --fix '**/*.{ts,tsx,js,jsx}'",
+    "lint:ci": "eslint '**/*.{ts,tsx,js,jsx}'",
     "format:fix": "prettier --write '**/*.{ts,tsx,js,jsx,json,md}'",
     "format:ci": "prettier --check '**/*.{ts,tsx,js,jsx,json,md}'"
   },
