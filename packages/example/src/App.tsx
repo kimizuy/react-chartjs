@@ -1,5 +1,5 @@
 import './App.css'
-import { Bar, ChartConfig } from '../../main/src'
+import { Bar, ChartConfig } from '@kimizuy/react-chartjs'
 
 function App(): JSX.Element {
   const config: ChartConfig = {
