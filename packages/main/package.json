@@ -11,6 +11,9 @@
   ],
   "author": "kimizuy <kimizuyamasaki@gmail.com>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist"
   ],
