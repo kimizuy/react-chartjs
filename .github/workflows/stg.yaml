@@ -22,9 +22,8 @@ jobs:
       - name: format
         run: yarn format:ci
       - name: build
-        run: yarn main build
+        run: yarn main build && yarn example build
       - name: App Deploy
-        run: yarn example build
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
