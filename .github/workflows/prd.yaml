@@ -27,9 +27,9 @@ jobs:
         run: yarn main build
       - name: can i publish
         run: yarn can-npm-publish
-        working-directory: ./packages/web-component
+        working-directory: ./packages/main
       - name: release
         run: npm publish
-        working-directory: ./packages/web-component
+        working-directory: ./packages/main
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

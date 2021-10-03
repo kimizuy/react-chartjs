@@ -30,4 +30,4 @@ jobs:
           publish_dir: ./packages/example
       - name: can i publish
         run: yarn can-npm-publish
-        working-directory: ./packages/web-component
+        working-directory: ./packages/main
