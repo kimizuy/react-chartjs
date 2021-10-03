@@ -1,4 +1,3 @@
-import './App.css'
 import { Bar, ChartConfig } from '../../main/src'
 
 function App(): JSX.Element {
