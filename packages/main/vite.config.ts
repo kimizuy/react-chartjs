@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import typescript from '@rollup/plugin-typescript'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,6 +10,16 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ['react'],
+      output: {
+        globals: {
+          react: 'React',
+        },
+      },
+      plugins: [
+        typescript({
+          tsconfig: './tsconfig.json',
+        }),
+      ],
     },
   },
 })

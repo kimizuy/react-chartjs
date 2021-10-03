@@ -1,21 +1,23 @@
-import React, { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import { Chart, ChartConfiguration, registerables } from 'chart.js'
+import useDeepCompareEffect from 'use-deep-compare-effect'
 
 type BaseProps = ChartConfiguration
 
 const Base = (props: BaseProps): JSX.Element => {
-  // Make a shallow copy.
-  // ref: https://github.com/reactchartjs/react-chartjs-2/issues/524
-  const config = { ...props }
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
-  useEffect(() => {
+  useDeepCompareEffect(() => {
     const element = canvasRef.current
     if (!element) return
+
+    // Make a copy.
+    // ref: https://github.com/reactchartjs/react-chartjs-2/issues/524
+    const config = { ...props }
     Chart.register(...registerables)
     const chart = new Chart(element, config)
     return () => chart.destroy()
-  }, [])
+  }, [props])
 
   return <canvas ref={canvasRef} />
 }
