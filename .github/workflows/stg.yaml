@@ -24,10 +24,11 @@ jobs:
       - name: build
         run: yarn main build
       - name: App Deploy
+        run: yarn example build
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./packages/example
+          publish_dir: ./packages/example/dist
       - name: can i publish
         run: yarn can-npm-publish
         working-directory: ./packages/main
