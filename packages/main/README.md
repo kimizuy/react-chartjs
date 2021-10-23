@@ -24,9 +24,13 @@ import { Bar } from '@kimizuy/react-chartjs'
 
 This repo is using [Vite](https://vitejs.dev/), [TypeScript](https://www.typescriptlang.org/) and [yarn workspaces](https://classic.yarnpkg.com/lang/en/docs/workspaces/).
 
-Clone this repo.
+Clone this repo:
 
-Install packages:
+```
+git clone https://github.com/kimizuy/react-chartjs.git
+```
+
+ Install packages:
 
 ```
 yarn

@@ -59,3 +59,5 @@ export const Scatter = (props: ChartProps): JSX.Element => {
 export type { ChartProps as ChartConfig }
 
 export * as ChartJs from 'chart.js'
+
+export * as ChartJsHelpers from 'chart.js/helpers'
