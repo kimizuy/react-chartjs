@@ -30,7 +30,7 @@ Clone this repo:
 git clone https://github.com/kimizuy/react-chartjs.git
 ```
 
- Install packages:
+Install packages:
 
 ```
 yarn

@@ -1,6 +1,6 @@
 {
   "name": "@kimizuy/react-chartjs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": "https://github.com/kimizuy/react-chartjs.git",
   "keywords": [
     "chartjs",
@@ -31,7 +31,7 @@
     "publish": "vite build && npm publish"
   },
   "dependencies": {
-    "chart.js": "^3.5.1",
+    "chart.js": "^3.6.2",
     "use-deep-compare-effect": "^1.8.0"
   },
   "devDependencies": {
