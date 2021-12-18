@@ -1,6 +1,6 @@
 # @kimizuy/react-chartjs
 
-A React wrapper used for the latest version of Chart.js.
+A simple React wrapper for Chart.js.
 
 You can see a working [demo](https://kimizuy.github.io/react-chartjs/) and try with [codesandbox](https://codesandbox.io/s/kimizuy-react-chartjs-2hs34?file=/src/App.tsx).
 
